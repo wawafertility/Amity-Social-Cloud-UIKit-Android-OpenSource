@@ -7,7 +7,7 @@ buildscript {
         amityTargetSdkVersion = 33
         amityCompileSdkVersion = 33
         amityKotlinJDKVersion = "8"
-        amityKotlinVersion = "1.4.21"
+        amityKotlinVersion = "1.7.21"
         amityLifecycleExtensionVersion = "2.0.0"
         amityMockkVersion = "1.10.0"
         amityMessagingSdkVersion = '5.30.0'
