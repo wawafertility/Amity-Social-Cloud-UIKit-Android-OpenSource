@@ -113,6 +113,7 @@ abstract class AmityFeedFragment : AmityBaseFragment() {
                 is LoadState.Loading -> {
                     handleLoadingState()
                 }
+                null -> {}
             }
         }
         binding.recyclerViewFeed.adapter = adapter
