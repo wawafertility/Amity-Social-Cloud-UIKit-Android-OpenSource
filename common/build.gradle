@@ -17,8 +17,8 @@ dependencies {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId = 'com.wawafertilityamity'
-            artifactId = 'amity-social'
+            groupId = 'com.github.wawafertility'
+            artifactId = 'Amity-Social-Cloud-UIKit-Android-OpenSource'
             version = '1.0.0'
         }
     }
