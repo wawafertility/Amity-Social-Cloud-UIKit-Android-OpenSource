@@ -1,6 +1,5 @@
 apply from: "../buildsystem/activity.gradle"
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
 
 android {
     buildTypes {
