@@ -2,7 +2,6 @@ apply from: "../buildsystem/activity.gradle"
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'maven-publish'
 
 android {
     buildFeatures {
@@ -27,14 +26,4 @@ dependencies {
     api ("com.linkedin.android.spyglass:spyglass:3.0.1")
     api("com.github.AmityCo.Amity-Social-Cloud-SDK-Android:amity-video-publisher:$amityMessagingSdkVersion")
     api("com.github.AmityCo.Amity-Social-Cloud-SDK-Android:amity-video-player:$amityMessagingSdkVersion")
-}
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            groupId = 'com.github.wawafertility'
-            artifactId = 'Amity-Social-Cloud-UIKit-Android-OpenSource:social'
-            version = '1.0.0'
-        }
-    }
 }
