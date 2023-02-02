@@ -2,6 +2,7 @@ apply from: "../buildsystem/activity.gradle"
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'maven-publish'
+apply plugin: 'maven'
 
 android {
     buildFeatures {
