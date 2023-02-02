@@ -1,6 +1,5 @@
 apply from: "../buildsystem/activity.gradle"
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
 apply plugin: 'kotlin-kapt'
 
 android {
@@ -13,14 +12,4 @@ android {
 dependencies {
     implementation 'commons-io:commons-io:2.6'
     api 'com.jakewharton.timber:timber:4.7.1'
-}
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            groupId = 'com.github.wawafertility'
-            artifactId = 'Amity-Social-Cloud-UIKit-Android-OpenSource'
-            version = '1.0.0'
-        }
-    }
 }
