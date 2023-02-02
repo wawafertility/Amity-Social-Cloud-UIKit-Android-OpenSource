@@ -1,5 +1,6 @@
 apply from: "../buildsystem/activity.gradle"
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     buildTypes {
@@ -12,9 +13,18 @@ android {
     }
 }
 
-
 dependencies {
     api project(path: ':social')
     api project(path: ':chat')
     api "com.github.AmityCo.Amity-Social-Cloud-SDK-Android:amity-sdk:$amityMessagingSdkVersion"
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.github.wawafertility'
+            artifactId = 'Amity-Social-Cloud-UIKit-Android-OpenSource:amity-uikit'
+            version = '1.0.0'
+        }
+    }
 }

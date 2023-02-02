@@ -1,7 +1,18 @@
 apply from: "../buildsystem/activity.gradle"
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'maven-publish'
 
 dependencies {
     implementation project(path: ':common')
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.github.wawafertility'
+            artifactId = 'Amity-Social-Cloud-UIKit-Android-OpenSource:chat'
+            version = '1.0.0'
+        }
+    }
 }

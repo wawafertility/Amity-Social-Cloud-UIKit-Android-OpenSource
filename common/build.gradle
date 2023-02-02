@@ -19,7 +19,7 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             groupId = 'com.github.wawafertility'
-            artifactId = 'Amity-Social-Cloud-UIKit-Android-OpenSource'
+            artifactId = 'Amity-Social-Cloud-UIKit-Android-OpenSource:common'
             version = '1.0.0'
         }
     }
